@@ -1,0 +1,10 @@
+*.gem
+.bundle
+Gemfile.lock
+pkg/*
+.DS_Store
+/rdoc
+/doc
+*.tmproj
+*.log
+/log
