@@ -12,9 +12,11 @@ Gem::Specification.new do |s|
   s.summary     = %q{A hybrid static-dynamic blog framework}
   s.description = %q{Combines the speed of static site generators while bridging the gap between feature bereft blog engines and resource hungry content management systems.}
   
-  s.add_dependency('rack')
+  s.add_dependency('rack', "~>1.2.1")
 
-  s.add_development_dependency('rspec')
+  s.add_development_dependency('rspec', "~>2.5.0")
+  s.add_development_dependency('aruba', "~>0.3.2") #check to see if Aruba supports 2.5 yet, if so remove custom fork from Gemfile
+  s.add_development_dependency('fakefs', "~>0.3.1")
   
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

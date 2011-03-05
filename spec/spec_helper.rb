@@ -1,8 +1,10 @@
+puts "loading: spec_helper.rb"
 $:.unshift File.expand_path((File.dirname(__FILE__) + '/../lib'))
 $:.unshift File.expand_path((File.dirname(__FILE__)))
 
-require 'rspec'
 require 'blast'
+require 'rspec'
+require 'fakefs/spec_helpers'
 
 # Debug print
 module Kernel
@@ -12,5 +14,8 @@ module Kernel
     puts "value: #{value}"
     puts "&" * 40
     puts ""
+  end
+  def dpi(value)
+    dp(value.inspect)
   end
 end
