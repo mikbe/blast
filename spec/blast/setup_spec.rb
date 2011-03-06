@@ -2,12 +2,15 @@ require "spec_helper"
 
 describe Blast::Setup do
 
-  context "" do
-    
-    it "creates an output directory" do
-      FakeFS do
-        
-      end
+  let(:setup) {Blast::Setup.new}
+
+  context "command line options" do
+
+    it "creates a new project" do
+      argv = ["-n", "test_blog"]
+      setup.parse_command_line()
+      
+      
     end
     
   end

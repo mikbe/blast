@@ -15,8 +15,14 @@ Gem::Specification.new do |s|
   s.add_dependency('rack', "~>1.2.1")
 
   s.add_development_dependency('rspec', "~>2.5.0")
-  s.add_development_dependency('aruba', "~>0.3.2") #check to see if Aruba supports 2.5 yet, if so remove custom fork from Gemfile
   s.add_development_dependency('fakefs', "~>0.3.1")
+  s.add_development_dependency('cucumber', "~>0.10.0")
+  #s.add_development_dependency('aruba', "0.3.2.1")
+
+  # Until Aruba is updated to require RSpec 2.5 
+  # you need to get my updated version from:
+  # git://github.com/mikbe/aruba.git
+  # s.add_development_dependency('aruba', "0.3.2.1") 
   
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

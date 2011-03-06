@@ -1,8 +1,9 @@
 source "http://rubygems.org"
 
-# Make aruba dependency point to my kludge up fork
-# This should be removed as soon as Aruba updates to RSpec 2.5
-gem "aruba", :git => "git://github.com/mikbe/aruba.git"
+# Kludge to install from the git repo instead of the real gem
+# I didn't want to create a gem because this is just for dev
+# gem "aruba", "0.3.2.1", :git => "git://github.com/mikbe/aruba.git"
 
 # Specify your gem's dependencies in blast.gemspec
 gemspec
+

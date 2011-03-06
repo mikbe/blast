@@ -4,6 +4,7 @@ $:.unshift File.expand_path((File.dirname(__FILE__)))
 
 require 'blast'
 require 'rspec'
+require 'aruba'
 require 'fakefs/spec_helpers'
 
 # Debug print
