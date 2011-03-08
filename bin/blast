@@ -1,9 +1,7 @@
 #!/usr/bin/env ruby
-$LOAD_PATH.unshift File.expand_path(File.join(File.dirname(__FILE__), "/../lib"))
+$:.unshift File.expand_path(File.join(File.dirname(__FILE__) + "/../lib"))
 require 'blast'
 
-puts "ARGV: #{ARGV}"
-
 # We pass in ARGV so we can build tests more easily since ARVG is read-only
-app = Blast::Setup.new()
-app.parse_command_line(ARGV)
+blast = Blast::Setup.new
+blast.parse_command_line(ARGV)

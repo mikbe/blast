@@ -1,0 +1,5 @@
+source "http://rubygems.org" 
+ 
+gem "haml"
+gem "rack-rewrite" 
+gem "blast"

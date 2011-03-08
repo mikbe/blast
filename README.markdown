@@ -45,3 +45,17 @@ Yes, there are, but this one is mine. I'm doing this as a programming exercise b
 
 #### Is there a graphical client I can use to manage my site?
 Not currently but I am envisioning one. I'd like to learn some GUI design using Ruby so maybe after I'm done with this.
+
+
+## Feature list
+
+* Markup-Extra for articles
+* HAML for template design
+* SASS for CSS design
+* Minifies css, javascript
+* GZips css, javascript (leaves plain-text intact as well for non-gzip browsers)
+* Proper cache management - when files are changed they get downloaded if not they are still cached
+
+## Sensible defaults
+
+External links are, by default, opened in a new tab

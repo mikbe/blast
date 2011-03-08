@@ -1,7 +1,7 @@
-$:.unshift File.expand_path((File.dirname(__FILE__) + '/../config'))
+$:.unshift File.expand_path(File.dirname(__FILE__) + '/../config')
 require 'rack'
 
 # Dynamically require program files 
-Dir.glob("./lib/blast/*") do |file|
+Dir[File.expand_path(File.dirname(__FILE__) + '/blast/*')].each do |file|
   require file
 end

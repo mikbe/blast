@@ -8,7 +8,7 @@ describe Blast::Server do
     
     before(:all) do
       @response = blast.get("/")
-      dpi @response
+      # dpi @response
     end
     
     it 'responds with a 200 OK' do

@@ -1,11 +1,12 @@
-puts "loading: spec_helper.rb"
 $:.unshift File.expand_path((File.dirname(__FILE__) + '/../lib'))
-$:.unshift File.expand_path((File.dirname(__FILE__)))
+$:.unshift File.expand_path(File.dirname(__FILE__))
 
 require 'blast'
-require 'rspec'
-require 'aruba'
-require 'fakefs/spec_helpers'
+require 'tmpdir'
+#require 'fileutils'
+#require 'aruba'
+#require 'fakefs'
+#require 'fakefs/spec_helpers'
 
 # Debug print
 module Kernel
